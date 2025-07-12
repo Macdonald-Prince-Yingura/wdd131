@@ -1,0 +1,26 @@
+@media (min-width: 600px) {
+
+    /* Hide hamburger, display row nav */
+    #hamburger { display: none; }
+  
+    #nav-menu {
+      display: flex !important;   /* always visible */
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    /* Responsive grid: auto‑fit 18 rem cards */
+    main { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+  
+    /* Lift cards slightly on hover */
+    figure {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    figure:hover,
+    figure:focus-within {
+      transform: translateY(-4px);
+      box-shadow: 0 0.4rem 1rem rgba(0,0,0,.12);
+    }
+  }
+  
