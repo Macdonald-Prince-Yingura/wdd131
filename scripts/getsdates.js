@@ -1,2 +1,6 @@
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+/* === Dynamic Footer Dates === */
+const now = new Date();
+document.getElementById("currentyear").textContent = now.getFullYear();
+
+const lastMod = document.lastModified;
+document.getElementById("lastModified").textContent = `Last modified: ${lastMod}`;
