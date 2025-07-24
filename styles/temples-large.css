@@ -1,26 +1,18 @@
-@media (min-width: 600px) {
+#hamburger {
+  display: none;
+}
 
-    /* Hide hamburger, display row nav */
-    #hamburger { display: none; }
-  
-    #nav-menu {
-      display: flex !important;   /* always visible */
-      flex-direction: row;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-  
-    /* Responsive grid: auto‑fit 18 rem cards */
-    main { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
-  
-    /* Lift cards slightly on hover */
-    figure {
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    figure:hover,
-    figure:focus-within {
-      transform: translateY(-4px);
-      box-shadow: 0 0.4rem 1rem rgba(0,0,0,.12);
-    }
-  }
-  
+nav {
+  display: flex !important;
+  flex-direction: row;
+  position: static;
+  background-color: transparent;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

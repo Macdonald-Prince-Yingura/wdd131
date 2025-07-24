@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Country Page for Ghana" />
+  <meta name="author" content="Your Name" />
+  <title>Discover Ghana</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Ghana</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/ghana-small.webp" media="(max-width: 600px)">
+        <source srcset="images/ghana-large.webp" media="(min-width: 601px)">
+        <img src="images/ghana-large.webp" alt="Scenic view of Ghana">
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/cloud.svg" class="mobile-icon" alt="Cloudy Weather Icon">
+      <p>Temperature: <span id="temperature">9</span> °C</p>
+      <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+      <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

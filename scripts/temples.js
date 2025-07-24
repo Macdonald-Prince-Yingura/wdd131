@@ -1,17 +1,12 @@
-// Hamburger toggle
-document.addEventListener("DOMContentLoaded", () => {
-    const btn  = document.getElementById("hamburger");
-    const menu = document.getElementById("nav-menu");
-  
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("active");
-  
-      // Swap icon ☰ ↔ ✖
-      btn.textContent = menu.classList.contains("active") ? "✖" : "☰";
-      btn.setAttribute(
-        "aria-label",
-        menu.classList.contains("active") ? "Close navigation menu" : "Open navigation menu"
-      );
-    });
-  });
-  
+// Toggle Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  hamburger.textContent = navMenu.classList.contains('show') ? '✖' : '☰';
+});
+
+// Footer Year and Last Modified
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
