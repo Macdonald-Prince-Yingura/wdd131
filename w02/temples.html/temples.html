@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive picture album of temples">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menuBtn" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+    <section class="temple-grid">
+      <!-- 9+ temple images with captions -->
+      <figure>
+        <img src="images/temple1.webp" alt="Salt Lake Temple" width="300" height="200" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.webp" alt="Rome Italy Temple" width="300" height="200" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.webp" alt="Accra Ghana Temple" width="300" height="200" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.webp" alt="Tokyo Japan Temple" width="300" height="200" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.webp" alt="Paris France Temple" width="300" height="200" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.webp" alt="Mexico City Temple" width="300" height="200" loading="lazy">
+        <figcaption>Mexico City Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple7.webp" alt="Lima Peru Temple" width="300" height="200" loading="lazy">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple8.webp" alt="Manila Philippines Temple" width="300" height="200" loading="lazy">
+        <figcaption>Manila Philippines Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple9.webp" alt="Johannesburg Temple" width="300" height="200" loading="lazy">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
