@@ -1,113 +1,148 @@
 /* Google‑font already imported in HTML */
-
 :root {
-    --primary: #00548b;  /* AA‑contrast on white */
-    --accent:  #e8aa14;  /* hover accent */
-    --bg:      #f4f7fa;
-  }
-  
-  *,
-  *::before,
-  *::after { box-sizing: border-box; }
-  
-  body {
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    background: var(--bg);
-    color: #253238;
-    line-height: 1.6;
-  }
-  
-  /* ===== Header & Nav ===== */
-  header {
-    background: var(--primary);
-    color: #fff;
-    padding: 1rem 0.5rem;
-    text-align: center;
-  }
-  
-  #page-title {
-    display: block;
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Hamburger button (mobile) */
+  --primary: #00548b;  /* AA‑contrast on white */
+  --accent:  #e8aa14;  /* hover accent */
+  --bg:      #f4f7fa;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: var(--bg);
+  color: #253238;
+  line-height: 1.6;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+#page-title {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Hamburger button (mobile) */
+#hamburger {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+/* Nav hidden by default on mobile */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Show nav when JS adds .active */
+#nav-menu.active {
+  display: flex;
+}
+
+#nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.3rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#nav-menu a:hover,
+#nav-menu a:focus {
+  background: var(--accent);
+  transform: scale(1.05); /* ≈5 % => <3 px shift */
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 62rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Responsive grid container */
+.temples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* ===== Temple Cards (figure) ===== */
+figure {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: grid;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #e1e8ef;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Layout for ≥600px ===== */
+@media (min-width: 600px) {
   #hamburger {
-    font-size: 1.6rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Nav hidden by default on mobile */
-  #nav-menu {
     display: none;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
   }
-  
-  /* Show when JS adds .active */
-  #nav-menu.active { display: flex; }
-  
-  #nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.35rem 0.75rem;
-    border-radius: 0.3rem;
-    transition: background 0.2s, transform 0.2s;
-  }
-  
-  #nav-menu a:hover,
-  #nav-menu a:focus {
-    background: var(--accent);
-    transform: scale(1.05); /* ≈5 % => <3 px shift */
-  }
-  
-  /* ===== Main ===== */
-  main {
-    max-width: 62rem;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
-    display: grid;
+
+  #nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
     gap: 1.5rem;
   }
-  
-  h1 {
-    margin: 0;
-    font-size: 1.75rem;
-    text-align: center;
+
+  .temples-grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
-  
-  /* Figure cards */
+
   figure {
-    background: #fff;
-    border-radius: 0.75rem;
-    box-shadow: 0 0.25rem 0.6rem rgba(0,0,0,.08);
-    overflow: hidden;
-    display: grid;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
-  
-  figure img {
-    width: 100%;
-    display: block;
+
+  figure:hover,
+  figure:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.12);
   }
-  
-  figcaption {
-    padding: 0.75rem 1rem;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  /* ===== Footer ===== */
-  footer {
-    background: #e1e8ef;
-    text-align: center;
-    padding: 1rem 0.5rem;
-    font-size: 0.9rem;
-  }
-  
+}
