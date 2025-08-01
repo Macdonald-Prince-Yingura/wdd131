@@ -3,38 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Home</title>
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="scripts/temples.js" defer></script>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Macdonald Prince Yingura - Home page with dynamic features and course navigation">
+  <meta name="author" content="Macdonald Prince Yingura">
+  <title>WDD 131 – Dynamic Web Fundamentals – Macdonald Prince Yingura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>WDD 131: Dynamic Web Development</h1>
-    <button id="menu" aria-label="Menu">&#9776;</button>
-    <nav class="navigation">
-      <a href="index.html">Home</a>
-      <a href="temples.html">Temple Album</a>
-      <!-- Add more links to future assignments -->
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+      <a href="#">Final Project</a>
     </nav>
   </header>
 
   <main>
-    <h2>Welcome to My Course Portfolio</h2>
-    <p>This site contains my work for BYU-Pathway Worldwide’s WDD 131 course. Explore the assignments I've completed throughout the semester.</p>
+    <h1>Macdonald Prince Yingura</h1>
 
-    <section class="assignments">
-      <h3>Assignments</h3>
-      <ul>
-        <li><a href="temples.html">W02: Temple Picture Album</a></li>
-        <!-- Add links to more assignments as you complete them -->
-      </ul>
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/macdonald.jpg" alt="Macdonald Prince Yingura">
+      <p>Hello! I'm Macdonald, a passionate web development student excited to build beautiful and functional websites.</p>
+    </section>
+
+    <section class="card">
+      <h2>My Favorite Place</h2>
+      <img src="images/ghana.jpg" alt="Ghana landscape">
+      <p>Ghana is a place of rich culture and beautiful scenery. I find peace and inspiration from its vibrant landscapes and heritage.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Macdonald Yingura | Ghana</p>
+    <p>&copy; <span id="currentyear"></span> Macdonald Prince Yingura | Ghana</p>
     <p id="lastModified"></p>
   </footer>
 </body>
