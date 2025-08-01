@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== META ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dynamic and responsive filtered temple gallery.">
+  <meta name="author" content="Macdonald Yingura" />
+  <title>Filtered Temples | WDD131</title>
+
+  <!-- ===== GOOGLE FONTS & CSS ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 600px)" />
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="scripts/filtered-temples.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <span id="page-title">Temple Album</span>
+    <button id="hamburger" aria-label="Open navigation menu">☰</button>
+    <nav id="nav-menu">
+      <button data-filter="all">Home</button>
+      <button data-filter="old">Old</button>
+      <button data-filter="new">New</button>
+      <button data-filter="large">Large</button>
+      <button data-filter="small">Small</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <h1>Filtered Temples</h1>
+    <section class="temples-grid" id="temples-container">
+      <!-- Temple cards will be dynamically injected here -->
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Macdonald Yingura | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+    </body>
+</html>
