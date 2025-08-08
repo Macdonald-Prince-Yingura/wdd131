@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu - Mr. Mackie Foods</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)" />
 </head>
 <body>
   <div class="loader"></div>
@@ -27,16 +27,33 @@
   <main>
     <section class="menu">
       <h2>Our Menu</h2>
-      <ul>
-        <li><strong>Grilled Pork</strong> – Tender and flavorful cuts.</li>
-        <li><strong>Grilled Goat Meat</strong> – Spiced and grilled to perfection.</li>
-        <li><strong>Grilled Chicken</strong> – Juicy and crispy options available.</li>
-        <li><strong>Guinea Fowl</strong> – A delicious traditional favorite.</li>
-        <li><strong>Fried Yam / Potatoes</strong> – Perfectly crisp and golden.</li>
-        <li><strong>Jollof Rice / Fried Rice</strong> – Packed with flavor and spice.</li>
-        <li><strong>Fresh Juices</strong> – Made daily with local fruits.</li>
-        <li><strong>Soft Drinks</strong> – A variety of chilled beverages.</li>
-      </ul>
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" 
+               alt="Grilled Chicken served with fried yam" loading="lazy" />
+          <p>Grilled Chicken with Fried Yam</p>
+        </div>
+        <div class="item">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" 
+               alt="Plate of fried yam" loading="lazy" />
+          <p>Fried Yam / Potatoes</p>
+        </div>
+        <div class="item">
+          <img src="https://images.pexels.com/photos/1111316/pexels-photo-1111316.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" 
+               alt="Delicious jollof rice" loading="lazy" />
+          <p>Jollof Rice / Fried Rice</p>
+        </div>
+        <div class="item">
+          <img src="https://images.unsplash.com/photo-1542444459-db6f58f8be2d?auto=format&fit=crop&w=600&q=80" 
+               alt="Fresh juice served in glass" loading="lazy" />
+          <p>Fresh Juices</p>
+        </div>
+        <div class="item">
+          <img src="https://images.unsplash.com/photo-1555992336-03a23c99cfc2?auto=format&fit=crop&w=600&q=80" 
+               alt="Grilled goat meat" loading="lazy" />
+          <p>Grilled Goat Meat</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -47,33 +64,3 @@
   <script src="scripts/main.js"></script>
 </body>
 </html>
-<section class="menu">
-  <h2>Our Menu</h2>
-  <div class="menu-items">
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" 
-           alt="Grilled Chicken served with fried yam" loading="lazy" />
-      <p>Grilled Chicken with Fried Yam</p>
-    </div>
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" 
-           alt="Plate of fried yam" loading="lazy" />
-      <p>Fried Yam / Potatoes</p>
-    </div>
-    <div class="item">
-      <img src="https://images.pexels.com/photos/1111316/pexels-photo-1111316.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" 
-           alt="Delicious jollof rice" loading="lazy" />
-      <p>Jollof Rice / Fried Rice</p>
-    </div>
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1542444459-db6f58f8be2d?auto=format&fit=crop&w=600&q=80" 
-           alt="Fresh juice served in glass" loading="lazy" />
-      <p>Fresh Juices</p>
-    </div>
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1555992336-03a23c99cfc2?auto=format&fit=crop&w=600&q=80" 
-           alt="Grilled goat meat" loading="lazy" />
-      <p>Grilled Goat Meat</p>
-    </div>
-  </div>
-</section>

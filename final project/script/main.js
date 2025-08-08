@@ -1,9 +1,5 @@
-// main.js
-
 document.addEventListener("DOMContentLoaded", () => {
-  // ==========================
-  // Hamburger Menu Toggle
-  // ==========================
+  // Hamburger menu toggle
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
 
@@ -11,123 +7,102 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("open");
       hamburger.classList.toggle("open");
+
+      // Update aria-expanded for accessibility
+      const expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", !expanded);
     });
   }
 
-  // ==========================
-  // Scroll Fade-In Animation
-  // ==========================
-  const hiddenElements = document.querySelectorAll(".hidden, .fade-in");
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show", "appear");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0,
-      rootMargin: "0px 0px -100px 0px",
-    }
-  );
-  hiddenElements.forEach((el) => observer.observe(el));
-
-  // ==========================
-  // Gallery Modal (Lightbox)
-  // ==========================
-  const galleryImages = document.querySelectorAll(".gallery img");
-  const modal = document.createElement("div");
-  modal.classList.add("modal");
-  document.body.appendChild(modal);
-
-  // Close modal when clicking outside image or on close button
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal || e.target.classList.contains("close")) {
-      modal.style.display = "none";
-    }
-  });
-
-  galleryImages.forEach((image) => {
-    image.addEventListener("click", () => {
-      modal.innerHTML = `
-        <span class="close" aria-label="Close modal" role="button" tabindex="0">&times;</span>
-        <img src="${image.src}" alt="${image.alt || "Gallery Image"}" class="modal-img" />
-      `;
-      modal.style.display = "flex";
-
-      // Optional: allow close on pressing Escape key
-      const escListener = (event) => {
-        if (event.key === "Escape") {
-          modal.style.display = "none";
-          document.removeEventListener("keydown", escListener);
-        }
-      };
-      document.addEventListener("keydown", escListener);
-    });
-  });
-
-  // ==========================
-  // Form Validation & Redirect
-  // ==========================
-  const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const name = form.querySelector("#name");
-      const email = form.querySelector("#email");
-      // Adjust according to your form's actual input id for order description or meal selection
-      const order = form.querySelector("#order") || form.querySelector("#meal") || form.querySelector("#quantity");
-
-      if (!name?.value.trim()) {
-        alert("Please enter your name.");
-        name?.focus();
-        return;
-      }
-
-      if (!email?.value.includes("@")) {
-        alert("Please enter a valid email address.");
-        email?.focus();
-        return;
-      }
-
-      if (order && !order.value.trim()) {
-        alert("Please fill in your order details.");
-        order.focus();
-        return;
-      }
-
-      // If validation passes, redirect to thank you page
-      window.location.href = "thankyou.html";
-    });
-  }
-
-  // ==========================
-  // Splash Screen or Loader Fade Out
-  // ==========================
-  const splash = document.querySelector(".splash");
-  if (splash) {
-    setTimeout(() => {
-      splash.classList.add("fade-out");
-      setTimeout(() => (splash.style.display = "none"), 1000);
-    }, 1500);
-  }
-
-  const loader = document.querySelector(".loader");
-  if (loader) {
-    window.addEventListener("load", () => {
-      loader.classList.add("fade-out");
-      setTimeout(() => (loader.style.display = "none"), 500);
-    });
-  }
-
-  // ==========================
-  // Dynamic Footer Year Update
-  // ==========================
+  // Dynamic footer year update
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // ORDER FORM LOGIC (if on order page)
+  const form = document.getElementById("orderForm");
+  if (form) {
+    // Load order count from localStorage
+    let ordersPlaced = Number(localStorage.getItem("ordersPlaced")) || 0;
+    const ordersCountSpan = document.getElementById("ordersPlaced");
+    if (ordersCountSpan) {
+      ordersCountSpan.textContent = ordersPlaced;
+    }
+
+    // Define Order object constructor
+    function Order(name, email, phone, meal, quantity, instructions) {
+      this.name = name;
+      this.email = email;
+      this.phone = phone;
+      this.meal = meal;
+      this.quantity = quantity;
+      this.instructions = instructions;
+      this.timestamp = new Date().toISOString();
+    }
+
+    // Store all orders in array
+    let orders = JSON.parse(localStorage.getItem("ordersArray")) || [];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      // Get values
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
+      const meal = form.meal.value;
+      const quantity = Number(form.quantity.value);
+      const instructions = form.instructions.value.trim();
+
+      // Validation
+      if (name === "") {
+        alert("Please enter your full name.");
+        form.name.focus();
+        return;
+      }
+      if (!email.includes("@") || email.length < 5) {
+        alert("Please enter a valid email address.");
+        form.email.focus();
+        return;
+      }
+      if (phone === "" || phone.length < 6) {
+        alert("Please enter a valid phone number.");
+        form.phone.focus();
+        return;
+      }
+      if (meal === "") {
+        alert("Please select a meal.");
+        form.meal.focus();
+        return;
+      }
+      if (quantity < 1 || isNaN(quantity)) {
+        alert("Please enter a valid quantity (1 or more).");
+        form.quantity.focus();
+        return;
+      }
+
+      // Create new order object
+      const newOrder = new Order(name, email, phone, meal, quantity, instructions);
+
+      // Add to array and save in localStorage
+      orders.push(newOrder);
+      localStorage.setItem("ordersArray", JSON.stringify(orders));
+
+      // Update orders placed counter
+      ordersPlaced++;
+      localStorage.setItem("ordersPlaced", ordersPlaced);
+      if (ordersCountSpan) ordersCountSpan.textContent = ordersPlaced;
+
+      // Optional: clear form or redirect
+      alert(`Thank you, ${name}! Your order for ${quantity} x ${meal} has been received.`);
+
+      form.reset();
+
+      // Redirect to thank you page after short delay
+      setTimeout(() => {
+        window.location.href = "thankyou.html";
+      }, 1500);
+    });
   }
 });
