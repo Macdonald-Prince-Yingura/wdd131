@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
+!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,95 +7,108 @@
     <title>WDD 131 – Dynamic Web Fundamentals – Macdonald Prince Yingura</title>
 
     <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals, Macdonald Prince Yingura, HTML, CSS, JavaScript, web development, BYU Pathway">
+          content="WDD 131 – Dynamic Web Fundamentals course home page by Macdonald Prince Yingura featuring HTML, CSS, JavaScript, and responsive web development.">
 
-    <meta name="author"
-        content="Macdonald Prince Yingura">
+    <meta name="author" content="Macdonald Prince Yingura">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
 
+    <!-- JavaScript -->
     <script src="scripts/getdates.js" defer></script>
 
 </head>
 
 <body>
 
-<header>
+    <header>
 
-<span id="course-title">
-WDD 131 – Dynamic Web Fundamentals
-</span>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
 
-<nav>
+        <nav>
+            <a href="https://www.linkedin.com/in/macdonald-yingura-b36817408/" target="_blank">LinkedIn</a>
 
-<a href="https://www.linkedin.com/in/macdonald-yingura-b36817408/ target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
 
-<a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/41?lang=eng" target="_blank">
+                Favorite Scripture
+            </a>
 
-<a href=https://www.churchofjesuschrist.org/study/scriptures/ot/isa/41?lang=eng
- target="_blank">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
 
-<a href="final-project/">Final Project</a>
+    </header>
 
-</nav>
+    <main>
 
-</header>
+        <h1>Macdonald Prince Yingura</h1>
 
-<main>
+        <div class="cards">
 
-<h1>Macdonald Prince Yingura</h1>
+            <section class="card">
 
-<section class="card">
+                <h2>About Me</h2>
 
-<h2>About Me</h2>
-    
-<img src="images/profile.jpg"
-alt="Macdonald Prince Yingura">
+                <img
+                    src="images/profile.webp"
+                    alt="Portrait of Macdonald Prince Yingura"
+                    width="300"
+                    height="300"
+                    loading="lazy">
 
-<p>
+                <p>
+                    Hello! My name is Macdonald Prince Yingura, and I am from Ghana.
+                    I am currently studying Web Development through BYU–Pathway Worldwide.
+                    I enjoy learning new technologies, designing websites, and creating
+                    solutions that improve people's daily lives. My goal is to become
+                    a professional full-stack web developer.
+                </p>
 
-Hello! My name is Macdonald Prince Yingura from Ghana. I am popularly known as Mr.Mackie I am studying Web Development through BYU Pathway Worldwide. I enjoy programming, web design, and learning new technologies. My goal is to become a professional software developer while building useful applications for businesses and individuals.
+            </section>
 
-</p>
+            <section class="card">
 
-</section>
+                <h2>About Ghana</h2>
 
-<section class="card">
+                <img
+                    src="images/ghana.webp"
+                    alt="Cape Coast Castle in Ghana"
+                    width="600"
+                    height="400"
+                    loading="lazy">
 
-<h2>Ghana</h2>
+                <p>
+                    Ghana is a peaceful country in West Africa known for its rich culture,
+                    welcoming people, beautiful landscapes, and historic landmarks such as
+                    Cape Coast Castle. It is one of Africa's leading producers of cocoa and
+                    gold and continues to grow as a center for education, tourism, and business.
+                </p>
 
-<img src="images/ghana.jpg"
-alt="Beautiful view of Ghana">
+            </section>
 
-<p>
+        </div>
 
-Ghana is located in West Africa and is well known for its rich culture, friendly people, beautiful beaches, and historical landmarks. It is one of Africa's most peaceful nations and has a growing technology industry.
+    </main>
 
-</p>
+    <footer>
 
-</section>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Macdonald Prince Yingura | Ghana
+        </p>
 
-</main>
+        <p id="lastModified"></p>
 
-<footer>
-
-<p>
-
-&copy;
-<span id="currentyear"></span>
-
-Macdonald Prince Yingura | Ghana
-
-</p>
-
-<p id="lastModified"></p>
-
-</footer>
+    </footer>
 
 </body>
 </html>

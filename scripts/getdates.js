@@ -1,6 +1,10 @@
-const today = new Date();
+// WDD 131 - Dynamic Web Fundamentals
+// Author: Macdonald Prince Yingura
 
-document.getElementById("currentyear").textContent = today.getFullYear();
+// Display the current year
+const currentYear = document.querySelector("#currentyear");
+currentYear.textContent = new Date().getFullYear();
 
-document.getElementById("lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
+// Display the last modified date
+const lastModified = document.querySelector("#lastModified");
+lastModified.textContent = `Last Modification: ${document.lastModified}`;
