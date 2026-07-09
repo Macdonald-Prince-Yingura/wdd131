@@ -31,23 +31,23 @@ display:block;
 margin:auto;
 }
 
-.navigation{
+nav.navigation{
 display:none;
 flex-direction:column;
 text-align:center;
 }
 
-.navigation.open{
+nav.navigation.open{
 display:flex;
 }
 
-.navigation a{
+nav.navigation a{
 color:white;
 text-decoration:none;
 padding:1rem;
 }
 
-.navigation a:hover{
+nav.navigation a:hover{
 background:#ffffff;
 color:#003366;
 }
