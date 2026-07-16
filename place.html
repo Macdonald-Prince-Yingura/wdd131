@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ghana | Akwaaba</title>
+
+    <meta name="description" content="Discover Ghana, the Gateway to Africa. Learn about its culture, geography, and weather.">
+    <meta name="author" content="Macdonald Prince Yingura">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🇬🇭 Ghana — Akwaaba</h1>
+
+</header>
+
+<main>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <picture>
+
+            <source
+                media="(min-width:768px)"
+                srcset="images/ghana-large.webp">
+
+            <img
+                src="images/ghana-small.webp"
+                alt="The Independence Arch in Accra, Ghana"
+                width="1600"
+                height="900">
+
+        </picture>
+
+        <div class="hero-text">
+
+            <p class="eyebrow">Gateway to Africa</p>
+
+            <h2>Akwaaba!</h2>
+
+            <p>
+                Ghana is famous for its welcoming people, rich culture,
+                beautiful beaches, historic castles, wildlife,
+                delicious cuisine, and vibrant cities.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DATA ================= -->
+
+    <section class="content">
+
+        <section class="card">
+
+            <h2>Data</h2>
+
+            <ul>
+
+                <li><strong>Area:</strong> 238,535 km²</li>
+
+                <li><strong>Population:</strong> 34.7 Million</li>
+
+                <li><strong>Capital:</strong> Accra</li>
+
+                <li><strong>Languages:</strong> English</li>
+
+                <li><strong>Currency:</strong> Ghana Cedi (GHS)</li>
+
+                <li><strong>Time Zone:</strong> GMT (UTC+0)</li>
+
+                <li><strong>Calling Code:</strong> +233</li>
+
+            </ul>
+
+        </section>
+
+        <!-- ================= WEATHER ================= -->
+
+        <section class="card weather">
+
+            <h2>
+                Weather
+                <span class="weather-icon"></span>
+            </h2>
+
+            <!-- Mobile SVG -->
+
+            <svg class="mobile-icon"
+                viewBox="0 0 64 64"
+                width="60"
+                height="60"
+                aria-hidden="true">
+
+                <circle
+                    cx="24"
+                    cy="24"
+                    r="12"
+                    fill="#FCD116"/>
+
+                <path
+                    d="M18 40h26a10 10 0 0 0 0-20
+                    14 14 0 0 0-26.6 4A9 9 0 0 0 18 40Z"
+                    fill="#ffffff"
+                    stroke="#046A38"
+                    stroke-width="2"/>
+
+            </svg>
+
+            <ul>
+
+                <li>
+                    <strong>Temperature:</strong>
+
+                    <span id="temperature">29</span>°C
+
+                </li>
+
+                <li>
+
+                    <strong>Conditions:</strong>
+
+                    Partly Cloudy
+
+                </li>
+
+                <li>
+
+                    <strong>Wind Speed:</strong>
+
+                    <span id="windSpeed">15</span> km/h
+
+                </li>
+
+                <li>
+
+                    <strong>Wind Chill:</strong>
+
+                    <span id="windChillOutput"></span>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+    </section>
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <section class="overview">
+
+        <div>
+
+            <img
+                src="images/mausoleum.webp"
+                alt="Kwame Nkrumah Mausoleum"
+                loading="lazy"
+                width="800"
+                height="600">
+
+        </div>
+
+        <div>
+
+            <p class="eyebrow">Overview</p>
+
+            <h2>A Nation of Heritage and Hope</h2>
+
+            <p>
+
+                Ghana became the first country in
+                Sub-Saharan Africa to gain independence
+                in 1957 under Dr. Kwame Nkrumah.
+
+            </p>
+
+            <p>
+
+                From Cape Coast Castle to Kakum National Park,
+                Mole National Park, Lake Volta, and bustling
+                Accra, Ghana offers unforgettable experiences.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CULTURE ================= -->
+
+    <section class="culture">
+
+        <h2>Culture</h2>
+
+        <div class="culture-grid">
+
+            <article>
+
+                <h3>Kente Cloth</h3>
+
+                <p>
+
+                    Handwoven colorful fabric representing
+                    wisdom, leadership and history.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Jollof Rice</h3>
+
+                <p>
+
+                    Ghana's famous rice dish enjoyed
+                    throughout West Africa.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Highlife Music</h3>
+
+                <p>
+
+                    A unique Ghanaian music style
+                    combining African rhythms and jazz.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        &copy;
+
+        <span id="year"></span>
+
+        Macdonald Prince Yingura | WDD131
+
+    </p>
+
+    <p>
+
+        Last Modified:
+
+        <span id="lastModified"></span>
+
+    </p>
+
+</footer>
+
+</body>
+</html>
