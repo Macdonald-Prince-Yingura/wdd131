@@ -1,0 +1,198 @@
+/* ==========================================
+   WDD131 - Place Page
+   Mobile First CSS
+   Author: Macdonald Prince Yingura
+========================================== */
+
+:root{
+    --red:#CE1126;
+    --gold:#FCD116;
+    --green:#006B3F;
+    --dark:#222;
+    --light:#f8f8f8;
+    --white:#ffffff;
+    --shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Work Sans",sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:var(--green);
+    color:var(--white);
+    text-align:center;
+    padding:1rem;
+}
+
+header h1{
+    font-family:"Fraunces",serif;
+    font-size:2rem;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+}
+
+.hero picture,
+.hero img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.hero-text{
+    background:rgba(0,0,0,.60);
+    color:white;
+    padding:1.5rem;
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--gold);
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.hero-text h2{
+    font-family:"Fraunces",serif;
+    font-size:2rem;
+    margin:.5rem 0;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+    display:grid;
+    gap:1.5rem;
+    padding:1.5rem;
+}
+
+.card{
+    background:white;
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.card h2{
+    color:var(--green);
+    margin-bottom:1rem;
+    font-family:"Fraunces",serif;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    margin-bottom:.75rem;
+}
+
+/* ================= WEATHER ================= */
+
+.weather{
+    text-align:center;
+}
+
+.mobile-icon{
+    display:block;
+    margin:0 auto 1rem;
+}
+
+.weather-icon{
+    display:none;
+}
+
+/* ================= OVERVIEW ================= */
+
+.overview{
+    padding:1.5rem;
+}
+
+.overview img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:1rem;
+    box-shadow:var(--shadow);
+}
+
+.overview h2{
+    font-family:"Fraunces",serif;
+    color:var(--green);
+    margin:.5rem 0 1rem;
+}
+
+/* ================= CULTURE ================= */
+
+.culture{
+    padding:1.5rem;
+}
+
+.culture h2{
+    text-align:center;
+    color:var(--green);
+    font-family:"Fraunces",serif;
+    margin-bottom:1.5rem;
+}
+
+.culture-grid{
+    display:grid;
+    gap:1rem;
+}
+
+.culture article{
+    background:white;
+    padding:1.25rem;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.culture article h3{
+    color:var(--red);
+    margin-bottom:.5rem;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--green);
+    color:white;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
+
+footer p{
+    margin:.35rem 0;
+}
+
+/* ================= LINKS ================= */
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
