@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples | Filtered Temple Gallery</title>
+  <meta name="description" content="A filterable gallery of temples around the world, sortable by age and size." />
+  <link rel="stylesheet" href="filtered-temples.css" />
+  <script src="filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temples</h1>
+    <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#" data-filter="home">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="filter-heading">Home</h2>
+    <section id="temple-gallery" class="gallery">
+      <!-- Temple cards are generated dynamically by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Temples Gallery | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* ---------- Color schema ----------
+   Primary (headings/header bg): #1d3557
+   Accent (nav links, hover):    #457b9d
+   Background:                   #f1faee
+   Card background:              #ffffff
+   Text:                         #1d1d1d
+------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f1faee;
+  color: #1d1d1d;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+header {
+  background-color: #1d3557;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #457b9d;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+  background-color: #457b9d;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+#filter-heading {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding-bottom: 1rem;
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  padding: 0.75rem 1rem 0;
+}
+
+figcaption h3 {
+  color: #1d3557;
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+figcaption p {
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+footer {
+  background-color: #1d3557;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Tablet and up */
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: show full nav bar, hide hamburger */
+@media (min-width: 900px) {
+  #menu-btn {
+    display: none;
+  }
+
+  header {
+    flex-wrap: nowrap;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  nav ul li a {
+    border-top: none;
+    border-left: 1px solid #457b9d;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
