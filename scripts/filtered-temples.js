@@ -1,175 +1,197 @@
 const temples = [
-  {
-    templeName: "Aba Nigeria",
-    location: "Aba, Nigeria",
-    dedicated: "2005, August, 7",
-    area: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
-    dedicated: "1888, May, 21",
-    area: 74792,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-  },
-  {
-    templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
-    dedicated: "2015, June, 7",
-    area: 96630,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg",
-  },
-  {
-    templeName: "Yigo Guam",
-    location: "Yigo, Guam",
-    dedicated: "2020, May, 2",
-    area: 6861,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg",
-  },
-  {
-    templeName: "Washington D.C.",
-    location: "Kensington, Maryland, United States",
-    dedicated: "1974, November, 19",
-    area: 156558,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg",
-  },
-  {
-    templeName: "Lima Perú",
-    location: "Lima, Perú",
-    dedicated: "1986, January, 10",
-    area: 9600,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg",
-  },
-  {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
-  },
-  {
-    templeName: "Detroit Michigan",
-    location: "Bloomfield Hills, Michigan, United States",
-    dedicated: "2023, October, 22",
-    area: 39918,
-    imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/detroit-michigan-temple/detroit-michigan-temple-1.jpg",
-  },
-  {
-    templeName: "St. George Utah",
-    location: "St. George, Utah, United States",
-    dedicated: "1877, April, 6",
-    area: 111206,
-    imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/st-george-utah-temple/st-george-utah-temple-2.jpg",
-  },
-  {
-    templeName: "Bangkok Thailand",
-    location: "Bangkok, Thailand",
-    dedicated: "2023, November, 19",
-    area: 41500,
-    imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-1.jpg",
-  },
+
+{
+templeName:"Aba Nigeria",
+location:"Aba, Nigeria",
+dedicated:"2005, August, 7",
+area:11500,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-2733.jpg"
+},
+
+{
+templeName:"Accra Ghana",
+location:"Accra, Ghana",
+dedicated:"2004, January,11",
+area:17500,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-7594.jpg"
+},
+
+{
+templeName:"Manti Utah",
+location:"Utah, USA",
+dedicated:"1888, May,21",
+area:74792,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-406.jpg"
+},
+
+{
+templeName:"Salt Lake",
+location:"Utah, USA",
+dedicated:"1893, April,6",
+area:253000,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-377.jpg"
+},
+
+{
+templeName:"Rome Italy",
+location:"Rome, Italy",
+dedicated:"2019, March,10",
+area:41010,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-435.jpg"
+},
+
+{
+templeName:"Paris France",
+location:"Paris, France",
+dedicated:"2017, May,21",
+area:44000,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-1954.jpg"
+},
+
+{
+templeName:"Payson Utah",
+location:"Utah, USA",
+dedicated:"2015, June,7",
+area:96630,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-384.jpg"
+},
+
+{
+templeName:"Laie Hawaii",
+location:"Hawaii, USA",
+dedicated:"1919, November,27",
+area:42100,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-761.jpg"
+},
+
+{
+templeName:"Nauvoo Illinois",
+location:"Illinois, USA",
+dedicated:"2002, June,27",
+area:54000,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-577.jpg"
+},
+
+{
+templeName:"Lagos Nigeria",
+location:"Lagos, Nigeria",
+dedicated:"2025, May,18",
+area:19000,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/lagos-nigeria-temple/lagos-nigeria-temple-57718.jpg"
+},
+
+{
+templeName:"Nairobi Kenya",
+location:"Nairobi, Kenya",
+dedicated:"2025, May,18",
+area:19800,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-59047.jpg"
+},
+
+{
+templeName:"Feather River California",
+location:"California, USA",
+dedicated:"2022, October,9",
+area:38700,
+imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/feather-river-california-temple/feather-river-california-temple-52290.jpg"
+}
+
 ];
 
-// --- Build one figure/card per temple ---
-function createTempleCard(temple) {
-  const figure = document.createElement("figure");
+const gallery = document.querySelector(".gallery");
 
-  const img = document.createElement("img");
-  img.src = temple.imageUrl;
-  img.alt = temple.templeName;
-  img.loading = "lazy"; // native lazy loading
-  img.width = 400;
-  img.height = 250;
+function displayTemples(filteredTemples){
 
-  const figcaption = document.createElement("figcaption");
-  figcaption.innerHTML = `
-    <h3>${temple.templeName}</h3>
-    <p><strong>Location:</strong> ${temple.location}</p>
-    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-    <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-  `;
+gallery.innerHTML="";
 
-  figure.appendChild(img);
-  figure.appendChild(figcaption);
-  return figure;
-}
+filteredTemples.forEach(temple=>{
 
-function renderTemples(templeArray) {
-  const gallery = document.getElementById("temple-gallery");
-  gallery.innerHTML = "";
-  templeArray.forEach((temple) => {
-    gallery.appendChild(createTempleCard(temple));
-  });
-}
+const card=document.createElement("section");
 
-// --- Filtering logic ---
-function getDedicatedYear(temple) {
-  return parseInt(temple.dedicated.split(",")[0], 10);
-}
+card.innerHTML=`
 
-function filterTemples(filter) {
-  switch (filter) {
-    case "old":
-      return temples.filter((t) => getDedicatedYear(t) < 1900);
-    case "new":
-      return temples.filter((t) => getDedicatedYear(t) > 2000);
-    case "large":
-      return temples.filter((t) => t.area > 90000);
-    case "small":
-      return temples.filter((t) => t.area < 10000);
-    case "home":
-    default:
-      return temples;
-  }
-}
+<h3>${temple.templeName}</h3>
 
-function applyFilter(filter, link) {
-  const filtered = filterTemples(filter);
-  renderTemples(filtered);
+<p><strong>Location:</strong> ${temple.location}</p>
 
-  document.getElementById("filter-heading").textContent =
-    filter.charAt(0).toUpperCase() + filter.slice(1);
+<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 
-  document
-    .querySelectorAll("nav ul li a")
-    .forEach((a) => a.classList.remove("active"));
-  if (link) link.classList.add("active");
+<p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
 
-  // Close mobile menu after a selection
-  document.getElementById("nav-list").classList.remove("open");
-}
+<img src="${temple.imageUrl}"
+alt="${temple.templeName} Temple"
+loading="lazy">
 
-// --- Navigation event listeners ---
-document.querySelectorAll("nav ul li a").forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    applyFilter(link.dataset.filter, link);
-  });
+`;
+
+gallery.appendChild(card);
+
 });
 
-// --- Hamburger menu toggle (mobile) ---
-const menuBtn = document.getElementById("menu-btn");
-const navList = document.getElementById("nav-list");
-menuBtn.addEventListener("click", () => {
-  const isOpen = navList.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", isOpen);
+}
+
+displayTemples(temples);
+
+// Filters
+
+document.querySelector("#home").addEventListener("click",()=>displayTemples(temples));
+
+document.querySelector("#old").addEventListener("click",()=>{
+
+displayTemples(
+
+temples.filter(t=>parseInt(t.dedicated)>0 && parseInt(t.dedicated)<1900)
+
+);
+
 });
 
-// --- Footer: dynamic year and last modified date ---
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent =
-  document.lastModified;
+document.querySelector("#new").addEventListener("click",()=>{
 
-// --- Initial render ---
-renderTemples(temples);
+displayTemples(
+
+temples.filter(t=>parseInt(t.dedicated)>2000)
+
+);
+
+});
+
+document.querySelector("#large").addEventListener("click",()=>{
+
+displayTemples(
+
+temples.filter(t=>t.area>90000)
+
+);
+
+});
+
+document.querySelector("#small").addEventListener("click",()=>{
+
+displayTemples(
+
+temples.filter(t=>t.area<10000)
+
+);
+
+});
+
+// Mobile Menu
+
+const menu=document.querySelector("#menu");
+
+const nav=document.querySelector(".navigation");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("open");
+
+menu.textContent=nav.classList.contains("open")?"✖":"☰";
+
+});
+
+// Footer
+
+document.querySelector("#year").textContent=new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent=`Last Modified: ${document.lastModified}`;

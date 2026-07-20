@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temples | Filtered Temple Gallery</title>
-  <meta name="description" content="A filterable gallery of temples around the world, sortable by age and size." />
-  <link rel="stylesheet" href="filtered-temples.css" />
-  <script src="filtered-temples.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Filtered Temple Album</title>
+
+<meta name="description" content="Temple Album with JavaScript filtering">
+<meta name="author" content="Macdonald Prince Yingura">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/filtered-temples.css">
+<link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+<script src="scripts/filtered-temples.js" defer></script>
+
 </head>
+
 <body>
-  <header>
-    <h1>Temples</h1>
-    <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#" data-filter="home">Home</a></li>
-        <li><a href="#" data-filter="old">Old</a></li>
-        <li><a href="#" data-filter="new">New</a></li>
-        <li><a href="#" data-filter="large">Large</a></li>
-        <li><a href="#" data-filter="small">Small</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2 id="filter-heading">Home</h2>
-    <section id="temple-gallery" class="gallery">
-      <!-- Temple cards are generated dynamically by JavaScript -->
-    </section>
-  </main>
+<header>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Temples Gallery | WDD 131</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
+<h1>Temple Album</h1>
+
+<button id="menu">☰</button>
+
+<nav class="navigation">
+
+<a href="#" id="home">Home</a>
+<a href="#" id="old">Old</a>
+<a href="#" id="new">New</a>
+<a href="#" id="large">Large</a>
+<a href="#" id="small">Small</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<h2>Temples</h2>
+
+<div class="gallery"></div>
+
+</main>
+
+<footer>
+
+<p>
+© <span id="year"></span>
+Macdonald Prince Yingura | Ghana
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
 </body>
 </html>
