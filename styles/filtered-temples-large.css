@@ -1,17 +1,61 @@
-@media screen and (min-width:768px){
+/* ==========================================
+   Large Screen Styles (768px and above)
+========================================== */
 
-#menu{
-display:none;
+@media screen and (min-width: 768px) {
+
+    /* Hide hamburger menu */
+    #menu {
+        display: none;
+    }
+
+    /* Horizontal navigation */
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+    }
+
+    /* Two-column layout for tablets */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.navigation{
-display:flex;
-justify-content:center;
-flex-direction:row;
+/* ==========================================
+   Desktop Styles (1024px and above)
+========================================== */
+
+@media screen and (min-width: 1024px) {
+
+    /* Three-column gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h2 {
+        text-align: left;
+    }
 }
 
-.gallery{
-grid-template-columns:repeat(3,1fr);
-}
+/* ==========================================
+   Large Desktop (1400px and above)
+========================================== */
 
+@media screen and (min-width: 1400px) {
+
+    main {
+        max-width: 1400px;
+    }
+
+    .gallery {
+        gap: 2rem;
+    }
 }
