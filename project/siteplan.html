@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Mackie Foods - Site Plan</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/siteplan.css">
+    <style>
+        :root{
+            --primary:#B22222;
+            --secondary:#FFD700;
+            --light:#f4f4f4;
+            --dark:#333333;
+        }
+
+        body{
+            font-family:'Roboto',sans-serif;
+            margin:0;
+            background:var(--light);
+            color:var(--dark);
+            line-height:1.7;
+        }
+
+        header{
+            background:var(--primary);
+            color:white;
+            padding:30px;
+            text-align:center;
+        }
+
+        .logo{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            background:var(--secondary);
+            color:var(--primary);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:auto;
+            font-size:2rem;
+            font-weight:bold;
+        }
+
+        h1,h2,h3{
+            font-family:'Poppins',sans-serif;
+        }
+
+        section{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-left:8px solid var(--primary);
+            border-radius:8px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .colors{
+            display:flex;
+            gap:20px;
+            margin-top:20px;
+        }
+
+        .color-box{
+            width:180px;
+            text-align:center;
+            color:white;
+            padding:25px;
+            border-radius:8px;
+            font-weight:bold;
+        }
+
+        .red{
+            background:#B22222;
+        }
+
+        .gold{
+            background:#FFD700;
+            color:#333;
+        }
+
+        .wireframes{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+        }
+
+        .wireframe{
+            border:2px solid #999;
+            padding:15px;
+        }
+
+        .box{
+            border:1px solid black;
+            padding:12px;
+            margin:10px 0;
+            text-align:center;
+            background:#eee;
+        }
+
+        footer{
+            background:var(--primary);
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+MM
+</div>
+
+<h1>Mr Mackie Foods Website Plan</h1>
+
+</header>
+
+<section>
+
+<h2>Site Name</h2>
+
+<p><strong>Mr Mackie Foods</strong></p>
+
+<p>
+Mr Mackie Foods is a cloud kitchen specializing in freshly prepared Ghanaian meals,
+charcoal grilled chicken, pork, fish, jollof rice, fried rice, and fast food delivery.
+The name represents quality, delicious meals, and reliable food delivery services.
+</p>
+
+<p><strong>Optional Domain:</strong> www.mrmackiefoods.com</p>
+
+</section>
+
+<section>
+
+<h2>Site Purpose</h2>
+
+<p>
+The purpose of this website is to promote Mr Mackie Foods, showcase the restaurant's menu,
+allow customers to place food orders, provide contact information, display business hours,
+and promote special offers and new menu items.
+</p>
+
+</section>
+
+<section>
+
+<h2>Target Audience Scenarios</h2>
+
+<ul>
+
+<li>What meals are available today?</li>
+
+<li>How can I order food online for delivery?</li>
+
+<li>Where is Mr Mackie Foods located?</li>
+
+<li>What are your opening hours?</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Color Schema</h2>
+
+<div class="colors">
+
+<div class="color-box red">
+Firebrick Red<br><br>
+#B22222<br><br>
+Used for headers, navigation, buttons and footer.
+</div>
+
+<div class="color-box gold">
+Golden Yellow<br><br>
+#FFD700<br><br>
+Used for highlights, call-to-action buttons and accents.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Typography</h2>
+
+<ul>
+
+<li><strong>Poppins</strong> – Used for headings and navigation.</li>
+
+<li><strong>Roboto</strong> – Used for body text and paragraphs.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Wireframes</h2>
+
+<div class="wireframes">
+
+<div class="wireframe">
+
+<h3>Mobile View</h3>
+
+<div class="box">Logo</div>
+
+<div class="box">Navigation Menu</div>
+
+<div class="box">Hero Image</div>
+
+<div class="box">Featured Meals</div>
+
+<div class="box">Special Offers</div>
+
+<div class="box">Contact Information</div>
+
+<div class="box">Footer</div>
+
+</div>
+
+<div class="wireframe">
+
+<h3>Desktop View</h3>
+
+<div class="box">Logo | Navigation Menu</div>
+
+<div class="box">Large Hero Banner</div>
+
+<div class="box">Featured Meals | Promotions</div>
+
+<div class="box">Menu Categories</div>
+
+<div class="box">Customer Reviews</div>
+
+<div class="box">Location Map | Contact Details</div>
+
+<div class="box">Footer</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Testing Checklist</h2>
+
+<ul>
+
+<li>✔ HTML Validation</li>
+
+<li>✔ CSS Validation</li>
+
+<li>✔ Accessibility (95+)</li>
+
+<li>✔ Best Practices (95+)</li>
+
+<li>✔ SEO (95+)</li>
+
+<li>✔ Performance</li>
+
+<li>✔ Color Contrast AA Compliance</li>
+
+</ul>
+
+</section>
+
+<footer>
+
+<p>Mr Mackie Foods Website Planning Document | WDD 131</p>
+
+</footer>
+
+</body>
+</html>
