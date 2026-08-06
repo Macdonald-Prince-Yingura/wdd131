@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Order Online | Mr Mackie Foods
+    </title>
+
+
+    <meta name="description"
+        content="Place your food order online from Mr Mackie Foods and enjoy delicious Ghanaian meals delivered fresh to you.">
+
+
+    <meta name="author"
+        content="Macdonald Prince Yingura">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="styles/styles.css">
+
+
+    <link rel="stylesheet"
+        href="styles/large.css">
+
+
+
+    <!-- JavaScript -->
+
+    <script src="scripts/main.js"
+        defer></script>
+
+
+    <script src="scripts/order.js"
+        defer></script>
+
+
+
+    <link rel="icon"
+        href="favicon.ico">
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+    <div class="logo-container">
+
+
+        <img
+            src="images/logo.webp"
+            alt="Mr Mackie Foods Logo"
+            width="90"
+            height="90">
+
+
+        <div>
+
+
+            <h1>
+                Mr Mackie Foods
+            </h1>
+
+
+            <p>
+                Freshly Grilled • Freshly Served
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <button
+        id="menuButton"
+        aria-label="Toggle navigation menu">
+
+        ☰
+
+    </button>
+
+
+
+
+    <nav id="primaryNav">
+
+
+        <ul>
+
+
+            <li>
+                <a href="index.html">
+
+                    Home
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="menu.html">
+
+                    Menu
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="order.html"
+                   class="active">
+
+                    Order
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="references.html">
+
+                    References
+
+                </a>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+
+<main>
+
+
+<section class="page-banner">
+
+
+    <h2>
+        Place Your Order
+    </h2>
+
+
+    <p>
+
+        Complete the form below and enjoy freshly prepared
+        Ghanaian meals delivered to your location.
+
+    </p>
+
+
+</section>
+
+
+
+
+
+
+<section class="order-section">
+
+
+<div class="container">
+
+
+
+<form id="orderForm">
+
+
+
+<!-- CUSTOMER INFORMATION -->
+
+
+<fieldset>
+
+
+<legend>
+Customer Information
+</legend>
+
+
+
+<label for="customerName">
+
+    Full Name
+
+</label>
+
+
+<input
+    type="text"
+    id="customerName"
+    name="customerName"
+    required
+    autocomplete="name">
+
+
+
+
+
+<label for="phone">
+
+    Phone Number
+
+</label>
+
+
+<input
+    type="tel"
+    id="phone"
+    name="phone"
+    required
+    autocomplete="tel">
+
+
+
+
+
+<label for="email">
+
+    Email Address
+
+</label>
+
+
+<input
+    type="email"
+    id="email"
+    name="email"
+    required
+    autocomplete="email">
+
+
+
+</fieldset>
+
+
+
+
+
+
+<!-- DELIVERY INFORMATION -->
+
+
+<fieldset>
+
+
+<legend>
+
+Delivery Details
+
+</legend>
+
+
+
+
+<label for="address">
+
+    Delivery Address
+
+</label>
+
+
+<textarea
+    id="address"
+    name="address"
+    rows="4"
+    required>
+
+</textarea>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+<!-- FOOD SELECTION -->
+
+
+<fieldset>
+
+
+<legend>
+
+Choose Your Meal
+
+</legend>
+
+
+
+
+
+<label for="meal">
+
+    Select Meal
+
+</label>
+
+
+
+<select
+    id="meal"
+    name="meal"
+    required>
+
+
+<option value="">
+
+Choose a meal
+
+</option>
+
+
+<option value="Jollof Rice">
+
+Jollof Rice with Chicken - GH₵65
+
+</option>
+
+
+<option value="Fried Rice">
+
+Fried Rice with Chicken - GH₵70
+
+</option>
+
+
+
+<option value="Banku">
+
+Banku with Grilled Fish - GH₵80
+
+</option>
+
+
+
+<option value="Grilled Chicken">
+
+Grilled Chicken - GH₵60
+
+</option>
+
+
+
+<option value="Pork Kebab">
+
+Pork Kebab - GH₵55
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+<label for="quantity">
+
+Quantity
+
+</label>
+
+
+
+<input
+
+    type="number"
+
+    id="quantity"
+
+    name="quantity"
+
+    min="1"
+
+    value="1"
+
+    required>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- DELIVERY METHOD -->
+
+
+<fieldset>
+
+
+<legend>
+
+Delivery Method
+
+</legend>
+
+
+
+
+<label>
+
+<input
+
+type="radio"
+
+name="delivery"
+
+value="Delivery"
+
+checked>
+
+Home Delivery
+
+</label>
+
+
+
+
+
+<label>
+
+<input
+
+type="radio"
+
+name="delivery"
+
+value="Pickup">
+
+Self Pickup
+
+</label>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<!-- EXTRA MESSAGE -->
+
+
+<fieldset>
+
+
+<legend>
+
+Additional Information
+
+</legend>
+
+
+
+<label for="notes">
+
+Special Instructions
+
+</label>
+
+
+
+<textarea
+
+id="notes"
+
+name="notes"
+
+rows="4"
+
+placeholder="Add any special request">
+
+</textarea>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<button
+
+type="submit"
+
+class="btn">
+
+
+Submit Order
+
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+
+
+<!-- ORDER RESULT -->
+
+
+<section class="order-result">
+
+
+<h2>
+
+Order Summary
+
+</h2>
+
+
+
+<div id="orderSummary">
+
+
+<p>
+
+Your order details will appear here.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+<div>
+
+
+<h2>
+
+Mr Mackie Foods
+
+</h2>
+
+
+<p>
+
+Authentic Ghanaian meals prepared fresh daily.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<h3>
+
+Links
+
+</h3>
+
+
+<ul>
+
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="menu.html">
+
+Menu
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="references.html">
+
+References
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<h3>
+
+Contact
+
+</h3>
+
+
+<p>
+
+Ghana
+
+</p>
+
+
+<p>
+
++233 XX XXX XXXX
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span id="currentYear"></span>
+Mr Mackie Foods
+
+</p>
+
+
+
+<p>
+
+Last Updated:
+<span id="lastModified"></span>
+
+</p>
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>

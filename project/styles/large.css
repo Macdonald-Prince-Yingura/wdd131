@@ -1,0 +1,252 @@
+/* ==========================================
+   MR MACKIE FOODS
+   LARGE SCREEN CSS
+   WDD131 FINAL PROJECT
+========================================== */
+
+
+
+@media screen and (min-width: 768px) {
+
+
+
+/* ==========================================
+   HEADER AND NAVIGATION
+========================================== */
+
+
+header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem 5%;
+
+}
+
+
+
+#menuButton {
+
+    display:none;
+
+}
+
+
+
+#primaryNav {
+
+    display:block;
+
+}
+
+
+
+#primaryNav ul {
+
+    flex-direction:row;
+
+    gap:1rem;
+
+    margin:0;
+
+}
+
+
+
+#primaryNav a {
+
+    padding:.6rem 1rem;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+
+.hero img {
+
+    height:600px;
+
+}
+
+
+
+.hero-content {
+
+    width:50%;
+
+    padding:3rem;
+
+}
+
+
+
+
+
+/* ==========================================
+   GRID LAYOUTS
+========================================== */
+
+
+.meal-grid {
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+}
+
+
+
+.benefits-grid {
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+}
+
+
+
+
+.testimonial-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+
+
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+
+.about .container {
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ==========================================
+   MENU PAGE
+========================================== */
+
+
+.menu-section .meal-card {
+
+    min-height:450px;
+
+}
+
+
+
+
+/* ==========================================
+   ORDER PAGE
+========================================== */
+
+
+.order-section .container {
+
+    max-width:800px;
+
+}
+
+
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+
+.footer-container {
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+.footer-bottom {
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+
+}
+
+
+
+
+
+/* ==========================================
+   EXTRA LARGE SCREENS
+========================================== */
+
+
+@media screen and (min-width:1100px) {
+
+
+
+.hero-content h2 {
+
+    font-size:3rem;
+
+}
+
+
+
+.hero-content p {
+
+    font-size:1.2rem;
+
+}
+
+
+
+section {
+
+    padding:5rem 0;
+
+}
+
+
+
+}

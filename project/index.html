@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================
+         Mr Mackie Foods - Home Page
+         WDD131 Final Project
+         Author: Macdonald Prince Yingura
+         ========================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mr Mackie Foods | Fresh Ghanaian Meals</title>
+
+    <meta name="description"
+        content="Mr Mackie Foods serves delicious Ghanaian meals including Jollof Rice, Fried Rice, Banku, Grilled Chicken, Fish and Pork.">
+
+    <meta name="author"
+        content="Macdonald Prince Yingura">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="styles/styles.css">
+
+    <link rel="stylesheet"
+          href="styles/large.css">
+
+    <!-- JavaScript -->
+
+    <script src="scripts/main.js" defer></script>
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+          href="favicon.ico">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-container">
+
+        <img
+            src="images/logo.webp"
+            alt="Mr Mackie Foods Logo"
+            width="90"
+            height="90">
+
+        <div>
+
+            <h1>Mr Mackie Foods</h1>
+
+            <p>Freshly Grilled • Freshly Served</p>
+
+        </div>
+
+    </div>
+
+    <button
+        id="menuButton"
+        aria-label="Toggle Navigation">
+
+        ☰
+
+    </button>
+
+    <nav id="primaryNav">
+
+        <ul>
+
+            <li>
+                <a href="index.html"
+                   class="active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="menu.html">
+                    Menu
+                </a>
+            </li>
+
+            <li>
+                <a href="order.html">
+                    Order
+                </a>
+            </li>
+
+            <li>
+                <a href="references.html">
+                    References
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<!-- ===========================================
+ HERO SECTION
+=========================================== -->
+
+<section class="hero">
+
+    <picture>
+
+        <source
+            media="(min-width:900px)"
+            srcset="images/hero.webp">
+
+        <img
+            src="images/hero.webp"
+            alt="Delicious Ghanaian grilled meals"
+            width="1600"
+            height="900">
+
+    </picture>
+
+    <div class="hero-content">
+
+        <h2>
+            Delicious Ghanaian Meals
+        </h2>
+
+        <p>
+
+            Experience authentic charcoal-grilled chicken,
+            pork, fish, delicious Jollof Rice,
+            Fried Rice and Banku prepared fresh every day.
+
+        </p>
+
+        <a href="order.html"
+           class="btn">
+
+            Order Now
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ===========================================
+ ABOUT SECTION
+=========================================== -->
+
+<section class="about">
+
+    <div class="container">
+
+        <h2>
+            Welcome to Mr Mackie Foods
+        </h2>
+
+        <p>
+
+            Mr Mackie Foods is a proudly Ghanaian food business
+            dedicated to preparing delicious meals using fresh,
+            high-quality ingredients and traditional recipes.
+            Every meal is carefully prepared to deliver an
+            unforgettable dining experience.
+
+        </p>
+
+        <p>
+
+            Whether you're craving spicy Jollof Rice,
+            tasty Fried Rice, Banku with grilled fish,
+            or charcoal-grilled chicken and pork,
+            our chefs prepare every order with passion
+            and attention to detail.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================================
+ FEATURED MEALS
+=========================================== -->
+
+<section class="featured">
+
+    <div class="container">
+
+        <h2>
+
+            Featured Meals
+
+        </h2>
+
+        <div class="meal-grid">
+
+            <!-- Meal 1 -->
+
+            <article class="meal-card">
+
+                <img
+                    src="images/jollof.webp"
+                    loading="lazy"
+                    alt="Jollof Rice with Grilled Chicken"
+                    width="600"
+                    height="400">
+
+                <h3>
+
+                    Jollof Rice
+
+                </h3>
+
+                <p>
+
+                    Ghana's favorite spicy rice served with
+                    juicy charcoal grilled chicken.
+
+                </p>
+
+                <p class="price">
+
+                    GH₵65
+
+                </p>
+
+            </article>
+
+            <!-- Meal 2 -->
+
+            <article class="meal-card">
+
+                <img
+                    src="images/fried-rice.webp"
+                    loading="lazy"
+                    alt="Fried Rice"
+                    width="600"
+                    height="400">
+
+                <h3>
+
+                    Fried Rice Special
+
+                </h3>
+
+                <p>
+
+                    Vegetable fried rice with grilled chicken,
+                    salad and pepper sauce.
+
+                </p>
+
+                <p class="price">
+
+                    GH₵70
+
+                </p>
+
+            </article>
+
+            <!-- Meal 3 -->
+
+            <article class="meal-card">
+
+                <img
+                    src="images/banku.webp"
+                    loading="lazy"
+                    alt="Banku and Grilled Fish"
+                    width="600"
+                    height="400">
+
+                <h3>
+
+                    Banku & Fish
+
+                </h3>
+
+                <p>
+
+                    Traditional Banku served with perfectly
+                    grilled tilapia and spicy pepper sauce.
+
+                </p>
+
+                <p class="price">
+
+                    GH₵80
+
+                </p>
+
+            </article>
+            <!-- ===========================================
+ WHY CHOOSE US SECTION
+=========================================== -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <h2>
+            Why Choose Mr Mackie Foods?
+        </h2>
+
+        <div class="benefits-grid">
+
+            <article class="benefit-card">
+
+                <h3>
+                    Fresh Ingredients
+                </h3>
+
+                <p>
+                    We use fresh and carefully selected ingredients
+                    to prepare meals that are delicious and healthy.
+                </p>
+
+            </article>
+
+
+            <article class="benefit-card">
+
+                <h3>
+                    Authentic Ghanaian Taste
+                </h3>
+
+                <p>
+                    Our meals are prepared using traditional Ghanaian
+                    cooking methods that bring out rich local flavors.
+                </p>
+
+            </article>
+
+
+            <article class="benefit-card">
+
+                <h3>
+                    Fast Delivery
+                </h3>
+
+                <p>
+                    Enjoy your favorite meals delivered quickly and
+                    conveniently to your home or workplace.
+                </p>
+
+            </article>
+
+
+            <article class="benefit-card">
+
+                <h3>
+                    Quality Service
+                </h3>
+
+                <p>
+                    Customer satisfaction is our priority. Every order
+                    receives attention and care.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================================
+ TODAY'S SPECIAL SECTION
+ JavaScript will dynamically update this area
+=========================================== -->
+
+<section class="special">
+
+    <div class="container">
+
+        <h2>
+            Today's Special
+        </h2>
+
+
+        <div id="specialMeal">
+
+            <p>
+                Loading today's special meal...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===========================================
+ CUSTOMER TESTIMONIALS
+=========================================== -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <h2>
+            What Our Customers Say
+        </h2>
+
+
+        <div class="testimonial-grid">
+
+
+            <article class="testimonial-card">
+
+
+                <img
+                    src="images/customer1.webp"
+                    loading="lazy"
+                    alt="Customer smiling"
+                    width="300"
+                    height="300">
+
+
+                <p>
+
+                    "The Jollof Rice and grilled chicken
+                    were amazing. The taste reminded me
+                    of home."
+
+                </p>
+
+
+                <h3>
+                    Ama K.
+                </h3>
+
+
+            </article>
+
+
+
+            <article class="testimonial-card">
+
+
+                <img
+                    src="images/customer2.webp"
+                    loading="lazy"
+                    alt="Happy customer"
+                    width="300"
+                    height="300">
+
+
+                <p>
+
+                    "Excellent service and delicious food.
+                    My family always orders from Mr Mackie Foods."
+
+                </p>
+
+
+                <h3>
+                    Kwame A.
+                </h3>
+
+
+            </article>
+
+
+
+
+            <article class="testimonial-card">
+
+
+                <img
+                    src="images/customer3.webp"
+                    loading="lazy"
+                    alt="Satisfied customer"
+                    width="300"
+                    height="300">
+
+
+                <p>
+
+                    "The grilled fish and Banku are the best
+                    I've tasted. Highly recommended!"
+
+                </p>
+
+
+                <h3>
+                    Michael T.
+                </h3>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- ===========================================
+ VISITOR INFORMATION
+ JavaScript localStorage section
+=========================================== -->
+
+
+<section class="visitor-section">
+
+
+    <div class="container">
+
+
+        <h2>
+            Welcome Back!
+        </h2>
+
+
+        <p id="visitMessage">
+
+            Checking your visit history...
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- ===========================================
+ CALL TO ACTION SECTION
+=========================================== -->
+
+
+<section class="cta">
+
+
+    <div class="container">
+
+
+        <h2>
+
+            Ready to Enjoy Delicious Meals?
+
+        </h2>
+
+
+        <p>
+
+            Place your order today and enjoy freshly prepared
+            Ghanaian dishes delivered directly to you.
+
+        </p>
+
+
+        <a href="order.html"
+           class="btn">
+
+            Start Your Order
+
+        </a>
+
+
+    </div>
+
+
+</section>
+<!-- ===========================================
+ FOOTER
+=========================================== -->
+
+</main>
+
+
+<footer>
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-about">
+
+
+            <h2>
+                Mr Mackie Foods
+            </h2>
+
+
+            <p>
+
+                Serving delicious Ghanaian meals with
+                passion, quality, and excellent customer service.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+
+            <h3>
+                Quick Links
+            </h3>
+
+
+            <ul>
+
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="order.html">
+                        Order
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="references.html">
+                        References
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+
+
+        <div class="footer-contact">
+
+
+            <h3>
+                Contact Us
+            </h3>
+
+
+            <p>
+                📍 Ghana
+            </p>
+
+
+            <p>
+                📞 +233 543696039
+            </p>
+
+
+            <p>
+                ✉ info@mrmackiefoods.com
+            </p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="footer-bottom">
+
+
+        <p>
+
+            © <span id="currentYear"></span>
+            Mr Mackie Foods.
+            All rights reserved.
+
+        </p>
+
+
+
+        <p>
+
+            Last Updated:
+            <span id="lastModified"></span>
+
+        </p>
+
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+
+<!-- ===========================================
+ JAVASCRIPT
+=========================================== -->
+
+
+<script src="scripts/main.js" defer></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Menu | Mr Mackie Foods
+    </title>
+
+
+    <meta name="description"
+        content="Explore Mr Mackie Foods menu featuring authentic Ghanaian meals including Jollof Rice, Fried Rice, Banku, grilled chicken, fish and pork.">
+
+
+    <meta name="author"
+        content="Macdonald Prince Yingura">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="styles/styles.css">
+
+
+    <link rel="stylesheet"
+        href="styles/large.css">
+
+
+
+    <!-- JavaScript -->
+
+    <script src="scripts/menu.js"
+        defer></script>
+
+
+    <script src="scripts/main.js"
+        defer></script>
+
+
+    <link rel="icon"
+        href="favicon.ico">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+    <div class="logo-container">
+
+
+        <img
+            src="images/logo.webp"
+            alt="Mr Mackie Foods logo"
+            width="90"
+            height="90">
+
+
+        <div>
+
+            <h1>
+                Mr Mackie Foods
+            </h1>
+
+
+            <p>
+                Freshly Grilled • Freshly Served
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <button
+        id="menuButton"
+        aria-label="Open navigation menu">
+
+        ☰
+
+    </button>
+
+
+
+    <nav id="primaryNav">
+
+
+        <ul>
+
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="menu.html"
+                   class="active">
+
+                    Menu
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="order.html">
+
+                    Order
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="references.html">
+
+                    References
+
+                </a>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+<!-- =====================================
+MENU HERO
+===================================== -->
+
+
+<section class="page-banner">
+
+
+    <h2>
+        Our Delicious Menu
+    </h2>
+
+
+    <p>
+
+        Discover authentic Ghanaian dishes prepared
+        with fresh ingredients and traditional flavors.
+
+    </p>
+
+
+</section>
+
+
+
+
+
+<!-- =====================================
+CATEGORY FILTERS
+===================================== -->
+
+
+<section class="menu-filter">
+
+
+    <div class="container">
+
+
+        <h2>
+            Choose a Category
+        </h2>
+
+
+
+        <div class="filter-buttons">
+
+
+            <button
+                class="filter-btn"
+                data-category="all">
+
+                All
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-category="rice">
+
+                Rice Meals
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-category="traditional">
+
+                Traditional Meals
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-category="grill">
+
+                Grilled Meals
+
+            </button>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- =====================================
+DYNAMIC MENU ITEMS
+
+JavaScript inserts menu cards here
+===================================== -->
+
+
+<section class="menu-section">
+
+
+    <div class="container">
+
+
+        <div id="menuContainer"
+             class="meal-grid">
+
+
+            <p>
+
+                Loading menu items...
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- =====================================
+SPECIAL OFFER
+===================================== -->
+
+
+<section class="offer">
+
+
+    <div class="container">
+
+
+        <h2>
+            Weekend Special
+        </h2>
+
+
+        <p>
+
+            Enjoy our charcoal grilled chicken,
+            pork kebab, and fish specials every weekend.
+
+        </p>
+
+
+        <a href="order.html"
+           class="btn">
+
+            Order Now
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+
+    <div class="footer-container">
+
+
+        <div>
+
+
+            <h2>
+                Mr Mackie Foods
+            </h2>
+
+
+            <p>
+
+                Bringing authentic Ghanaian flavors
+                directly to your table.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div>
+
+
+            <h3>
+                Navigation
+            </h3>
+
+
+            <ul>
+
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="order.html">
+                        Order
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+
+
+        <div>
+
+
+            <h3>
+                Resources
+            </h3>
+
+
+            <a href="references.html">
+                Image References
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="footer-bottom">
+
+
+        <p>
+
+            © <span id="currentYear"></span>
+            Mr Mackie Foods
+
+        </p>
+
+
+        <p>
+
+            Last Updated:
+            <span id="lastModified"></span>
+
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>
