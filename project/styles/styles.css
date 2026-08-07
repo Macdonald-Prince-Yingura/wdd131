@@ -1,638 +1,200 @@
-/* ==========================================
-   MR MACKIE FOODS
-   WDD131 FINAL PROJECT
-   MOBILE FIRST CSS
-========================================== */
+/* ===========================
+   HOME INFO SECTION
+=========================== */
 
-
-/* ==========================================
-   CSS VARIABLES
-========================================== */
-
-:root {
-
-    --primary-color: #c1121f;
-    --secondary-color: #f4a300;
-    --dark-color: #1f2937;
-    --light-color: #ffffff;
-    --background-color: #f8f9fa;
-    --gray-color: #6b7280;
-
-    --heading-font: "Poppins", sans-serif;
-    --body-font: "Roboto", sans-serif;
-
-    --shadow:
-        0 4px 12px rgba(0,0,0,0.15);
-
+.info-section {
+    max-width: 1300px;
+    margin: 5rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2.5rem;
+    align-items: start;
 }
 
+/* Section Titles */
 
-
-/* ==========================================
-   RESET
-========================================== */
-
-
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-
-body {
-
-    font-family: var(--body-font);
-    line-height: 1.6;
-    color: var(--dark-color);
-    background-color: var(--background-color);
-
-}
-
-
-
-img {
-
-    max-width: 100%;
-    height: auto;
-    display: block;
-
-}
-
-
-
-h1,
-h2,
-h3 {
-
-    font-family: var(--heading-font);
-
-}
-
-
-
-h2 {
-
+.info-section h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-
+    color: #b22222;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
 
+/* ===========================
+   WHY CHOOSE US
+=========================== */
 
+.features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
 
-p {
+.feature-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s ease;
+    height: 100%;
+}
 
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.feature-card h3 {
+    color: #222;
     margin-bottom: 1rem;
-
+    font-size: 1.6rem;
 }
 
-
-
-a {
-
-    text-decoration: none;
-    color: inherit;
-
+.feature-card p {
+    color: #555;
+    line-height: 1.8;
 }
 
+/* ===========================
+   TODAY SPECIAL
+=========================== */
 
-
-ul {
-
-    list-style: none;
-
+.special-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
 }
 
-
-
-
-
-.container {
-
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-
+.special-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
 }
 
-
-
-/* ==========================================
-   HEADER
-========================================== */
-
-
-header {
-
-    background-color: var(--light-color);
-    padding: 1rem;
-    box-shadow: var(--shadow);
-
+.special-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
 }
 
-
-
-.logo-container {
-
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
+.special-card h3 {
+    color: #222;
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
 }
 
-
-
-.logo-container img {
-
-    border-radius: 50%;
-
+.special-card p {
+    color: #555;
+    line-height: 1.7;
 }
 
-
-
-.logo-container h1 {
-
-    color: var(--primary-color);
-    font-size: 1.5rem;
-
-}
-
-
-
-.logo-container p {
-
-    color: var(--gray-color);
-    font-size: .9rem;
-
-}
-
-
-
-
-/* ==========================================
-   MOBILE MENU BUTTON
-========================================== */
-
-
-#menuButton {
-
-    position: absolute;
-    right: 1rem;
-    top: 1.5rem;
-
-    background: none;
-    border: none;
-
-    font-size: 2rem;
-
-    cursor: pointer;
-
-}
-
-
-
-
-/* ==========================================
-   NAVIGATION
-========================================== */
-
-
-#primaryNav {
-
-    display: none;
-
-}
-
-
-
-#primaryNav.open {
-
+.special-price {
     display: block;
-
+    margin-top: 1rem;
+    color: #b22222;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+/* ===========================
+   TESTIMONIALS
+=========================== */
 
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
 
-#primaryNav ul {
-
+.testimonial-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s ease;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-
-    margin-top: 1rem;
-
+    justify-content: space-between;
 }
 
-
-
-#primaryNav a {
-
-    display: block;
-    padding: .7rem;
-
-    text-align: center;
-
-    border-radius: 8px;
-
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
 }
-
-
-
-#primaryNav a:hover,
-#primaryNav .active {
-
-    background-color: var(--primary-color);
-    color: white;
-
-}
-
-
-
-/* ==========================================
-   HERO SECTION
-========================================== */
-
-
-.hero {
-
-    position: relative;
-
-}
-
-
-
-.hero img {
-
-    width: 100%;
-    height: 450px;
-
-    object-fit: cover;
-
-}
-
-
-
-.hero-content {
-
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform:
-    translate(-50%, -50%);
-
-    width: 85%;
-
-    background:
-    rgba(0,0,0,.65);
-
-    color: white;
-
-    padding: 2rem;
-
-    text-align: center;
-
-    border-radius: 12px;
-
-}
-
-
-
-.hero-content h2 {
-
-    color: white;
-
-}
-
-
-
-.btn {
-
-    display: inline-block;
-
-    background-color:
-    var(--secondary-color);
-
-    color:
-    var(--dark-color);
-
-    padding:
-    .8rem 1.5rem;
-
-    border-radius: 8px;
-
-    font-weight: bold;
-
-    margin-top: 1rem;
-
-}
-
-
-
-.btn:hover {
-
-    background-color:
-    var(--primary-color);
-
-    color:white;
-
-}
-
-
-
-
-
-/* ==========================================
-   GENERAL SECTIONS
-========================================== */
-
-
-section {
-
-    padding: 3rem 0;
-
-}
-
-
-
-
-/* ==========================================
-   FOOD CARDS
-========================================== */
-
-
-.meal-grid {
-
-    display:
-
-    grid;
-
-    grid-template-columns:
-
-    1fr;
-
-    gap:
-
-    1.5rem;
-
-}
-
-
-
-.meal-card,
-.benefit-card,
-.testimonial-card {
-
-    background:white;
-
-    padding:1rem;
-
-    border-radius:12px;
-
-    box-shadow:var(--shadow);
-
-}
-
-
-
-.meal-card img {
-
-    border-radius:10px;
-
-}
-
-
-
-.price {
-
-    color:
-
-    var(--primary-color);
-
-    font-size:1.2rem;
-
-    font-weight:bold;
-
-}
-
-
-
-/* ==========================================
-   WHY US
-========================================== */
-
-
-.benefits-grid {
-
-    display:grid;
-
-    grid-template-columns:1fr;
-
-    gap:1rem;
-
-}
-
-
-
-
-/* ==========================================
-   TESTIMONIALS
-========================================== */
-
 
 .testimonial-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+}
 
-    width:100px;
+.testimonial-card p {
+    color: #444;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
 
-    height:100px;
+.testimonial-card h4 {
+    color: #222;
+    font-size: 1.3rem;
+}
 
-    border-radius:50%;
+/* ===========================
+   RESPONSIVE TABLET
+=========================== */
 
-    margin:auto;
+@media (max-width:992px){
+
+.info-section{
+    grid-template-columns:1fr;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.testimonials{
+    grid-template-columns:repeat(2,1fr);
+}
 
 }
 
+/* ===========================
+   MOBILE
+=========================== */
 
+@media (max-width:768px){
 
-
-/* ==========================================
-   FILTER BUTTONS
-========================================== */
-
-
-.filter-buttons {
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:1rem;
-
-    justify-content:center;
-
+.info-section{
+    margin:3rem auto;
 }
 
-
-
-.filter-btn {
-
-    padding:.7rem 1rem;
-
-    border:none;
-
-    cursor:pointer;
-
-    border-radius:8px;
-
-    background:
-
-    var(--secondary-color);
-
+.features,
+.testimonials{
+    grid-template-columns:1fr;
 }
 
+.info-section h2{
+    font-size:1.8rem;
+}
 
-
-/* ==========================================
-   FORM STYLING
-========================================== */
-
-
-form {
-
-    background:white;
-
+.feature-card,
+.special-card,
+.testimonial-card{
     padding:1.5rem;
-
-    border-radius:12px;
-
-    box-shadow:var(--shadow);
-
 }
 
-
-
-fieldset {
-
-    border:none;
-
-    margin-bottom:2rem;
-
+.testimonial-card img{
+    width:90px;
+    height:90px;
 }
-
-
-
-legend {
-
-    font-weight:bold;
-
-    color:var(--primary-color);
-
-    margin-bottom:1rem;
-
-}
-
-
-
-label {
-
-    display:block;
-
-    margin-top:1rem;
-
-    font-weight:bold;
-
-}
-
-
-
-input,
-select,
-textarea {
-
-    width:100%;
-
-    padding:.8rem;
-
-    margin-top:.5rem;
-
-    border:1px solid #ccc;
-
-    border-radius:8px;
-
-}
-
-
-
-
-/* ==========================================
-   FOOTER
-========================================== */
-
-
-footer {
-
-    background:
-    var(--dark-color);
-
-    color:white;
-
-    padding:2rem 1rem;
-
-}
-
-
-
-.footer-container {
-
-    display:grid;
-
-    gap:2rem;
-
-}
-
-
-
-.footer-bottom {
-
-    text-align:center;
-
-    margin-top:2rem;
-
-    border-top:1px solid white;
-
-    padding-top:1rem;
-
-}
-
-
-
-/* ==========================================
-   PAGE BANNER
-========================================== */
-
-
-.page-banner {
-
-    background:
-    var(--primary-color);
-
-    color:white;
-
-    text-align:center;
-
-    padding:3rem 1rem;
-
-}
-
-
-
-.page-banner h2 {
-
-    color:white;
 
 }
